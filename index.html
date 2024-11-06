@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="hero-section">
+        <div class="content">
+            <div class="text-column">
+                <h1 class="title">Lorem ipsum dolor sit amet, consectetur</h1>
+                <ul>
+                    <li class="listHeading"><span>&#9864;</span> 
+                        <strong>Lorem ipsum dolor sit amet</strong>
+                        <div class="listContent">Qui officia laboris id deserunt. Irure cillum ullamco culpa veniam reprehenderit esse deserunt eu elit id.</div>
+                    </li>
+                    <li class="listHeading"><span>&#9864;</span> 
+                        <strong>Lorem ipsum dolor sit amet</strong>
+                        <div class="listContent">Qui officia laboris id deserunt.Sunt ut amet aliqua ut sit.</div>
+                    </li>
+                    <li class="listHeading"><span>&#9864;</span> 
+                        <strong>Lorem ipsum dolor sit amet consectetur .</strong>
+                        <div class="listContent">Qui officia laboris id deserunt Non et esse ea nostrud dolor quis voluptate Lorem proident anim..</div>
+                    </li>
+                    <li class="listHeading"><span>&#9864;</span> 
+                        <strong>Lorem ipsum dolor sit amet consectetur.</strong>
+                        <div class="listContent">Qui officia laboris id deserunt. Anim ex duis ipsum officia pariatur tempor.</div>
+                    </li>
+                </ul>
+            </div>
+            <div class="form-column">
+                <div class="form-container">
+                    <h1>Lorem ipsum dolor</h1>
+                    <form>
+                        <label>Email*</label>
+                        <input type="email" placeholder="Enter your email" required>
+
+                        <label>Preferred Demo Date*</label>
+                        <div class="date-select">
+                            <input type="number" class="date" placeholder="Date" required>
+    
+                            <select>
+                                <option value="">Month</option>
+                                <option value="January">January</option>
+                                <option value="February">February</option>
+                                <option value="March">March</option>
+                                <option value="April">April</option>
+                                <option value="May">May</option>
+                                <option value="June">June</option>
+                                <option value="July">July</option>
+                                <option value="August">August</option>
+                                <option value="September">September</option>
+                                <option value="October">October</option>
+                                <option value="November">November</option>
+                                <option value="December">December</option>
+                            </select>
+                            <select>
+                                <option>Year</option>
+                                <script>
+                                    const currentYear = new Date().getFullYear();
+                                    for (let year = currentYear; year <= currentYear + 6; year++) {
+                                        document.write('<option value="' + year + '">' + year + '</option>');
+                                    }
+                                </script>
+                            </select>
+                        </div>                    
+
+                        <label>Your Department*</label>
+                        <select>
+                            <option>Choose from the list</option>
+                            <option>Engineering</option>
+                            <option>Student</option>
+                            <option>Finance</option>
+                        </select>
+
+                        <label>Which product would you like to take demo for?</label>
+                        <textarea placeholder="Tell us more about your requirements."></textarea>
+
+                        <label>How did you hear about us?</label>
+                        <div class="radio-group">
+                            <label><input type="radio" name="source" value="social" checked> Social Media</label>
+                            <label><input type="radio" name="source" value="google"> Google Ads</label>
+                        </div>
+
+                        <button type="submit">Request a Demo</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2: Cards with hover effect -->
+    <section class="card-section">
+        <h2>Lorem ipsum dolor sit amet</h2>
+        <div class="card">
+            <img src="img.png" alt="Card Image" class="card-image">
+            <div class="overlay">
+                <h3>Default state</h3>
+                <p>This is the default state of the card, use an image as &lt;img&gt; tag and add gradient overlay and text over it.</p>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+
+</body>
+</html>
